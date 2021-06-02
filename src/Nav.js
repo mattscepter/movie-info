@@ -14,7 +14,7 @@ function Nav({ Type, loc, genre, genreSelect, type, title }) {
         <div className="butt">
           <NavLink
             exact
-            to="/"
+            to="/movie-info"
             activeStyle={{
               fontWeight: "bold",
               color: "red",

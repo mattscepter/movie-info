@@ -37,6 +37,11 @@ function App() {
     <div className="app">
       <BrowserRouter>
         <Switch>
+          <Route exact path="/movie-info">
+            <Nav Type={Type} loc="Home" type="home" />
+            <List type={2} />
+          </Route>
+
           <Route exact path="/movies">
             <Nav
               Type={Type}
@@ -56,11 +61,6 @@ function App() {
             />
             <List type={1} />
           </Route>
-          <Route exact path="/">
-            <Nav Type={Type} loc="Home" type="home" />
-            <List type={2} />
-          </Route>
-
           <Route exact path="/:id/genre/:id">
             <Nav loc="gen" title={Title} />
             <GenrePage gen={gen} type={type} title={Title} />
