@@ -1,0 +1,64 @@
+.banner {
+  background-size: cover;
+  height: 45vh;
+  background-position: top -130px center;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 70%,
+    transparent 100%
+  );
+}
+
+.banner__contents {
+  left: 30px;
+  top: 280px;
+  position: absolute;
+}
+.banner__contents > h1 {
+  font-size: 50px;
+  font-weight: 400;
+  color: white;
+  text-shadow: 2px 2px 20px black;
+}
+
+.banner__contents > h4 {
+  text-shadow: 1px 1px 5px black;
+  width: 80vw;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 350;
+}
+
+.banner__contents > button {
+  background-color: gray;
+  color: white;
+  border: none;
+}
+
+.banner__contents > button:hover {
+  background-color: black;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner__contents {
+    top: 100px;
+  }
+  .banner {
+    background-size: fill;
+    background-position: top center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .banner {
+    height: 40vh;
+  }
+  .banner__contents > h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner {
+    height: 35vh;
+  }
+}

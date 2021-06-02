@@ -1,0 +1,101 @@
+.movie__card {
+  top: 0;
+  background-color: black;
+  z-index: 1000;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  color: white;
+
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.card > button {
+  right: 0;
+  z-index: 1001;
+  position: absolute;
+}
+
+.cancel__icon {
+  border-radius: 1000px;
+  border: 0;
+  background-color: black;
+  font-size: 40px !important;
+  color: white;
+}
+
+.card {
+  position: sticky;
+  top: 0px;
+  width: 700px;
+  background-color: black;
+  box-shadow: 9px 5px 100px 10px rgba(0, 0, 0, 1);
+}
+.card > img {
+  position: sticky;
+  top: 0;
+  width: 700px;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 70%,
+    transparent 100%
+  );
+}
+
+.card > h2 {
+  font-size: 40px;
+  padding: 20px;
+  font-weight: 400;
+}
+
+.card > p {
+  padding-left: 20px;
+  font-size: 20px;
+}
+.text {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  padding-right: 20px;
+  line-height: 1.8rem;
+  height: 20vh;
+  overflow-y: scroll;
+}
+
+.text::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: 500px;
+  }
+  .card > img {
+    width: 500px;
+  }
+  .card > h2 {
+    font-size: 30px;
+  }
+  .card > p {
+    font-size: 15px;
+    line-height: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 400px;
+  }
+  .card > img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 300px;
+  }
+  .card > img {
+    width: 300px;
+  }
+}
