@@ -90,19 +90,26 @@
   .genre__conatiner > img {
     width: 150px;
   }
-
+  .genre__conatiner > h2 {
+    font-size: 11px;
+    margin-top: 5px;
+    padding: 0;
+  }
   .genre__conatiner:hover > h2 {
     font-size: small;
   }
 }
 @media screen and (max-width: 503px) {
+  .genre__conatiner > h2 {
+    margin-top: 2px;
+  }
   .genre__posters {
     padding-left: 10px;
   }
   .genre__conatiner {
     width: 110px;
     height: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   .genre__conatiner > img {
     width: 110px;

@@ -43,6 +43,7 @@
 }
 
 .container > h2 {
+  margin: 0;
   padding: 3px;
   font-size: small;
   color: white;

@@ -72,18 +72,7 @@ function Nav({ Type, loc, genre, genreSelect, type, title }) {
               style={{ color: "white", fontSize: "50px", marginLeft: "20px" }}
             />
           </Button>
-          <p
-            style={{
-              transform: "translateX(-50%)",
-              left: "50%",
-              position: "absolute",
-              color: "white",
-              fontSize: "30px",
-              fontWeight: "300",
-            }}
-          >
-            {title}
-          </p>
+          <p className="genre__text">{title}</p>
         </>
       )}
     </div>
